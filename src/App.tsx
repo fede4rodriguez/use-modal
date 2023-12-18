@@ -9,15 +9,7 @@ function App() {
   return (
     <main className='min-h-screen grid place-content-center gap-4'>
       <header className='max-w-md'>
-        <h1 className='text-4xl font-bold mb-4'>Ejemplo de modales globales en ReactJs</h1>
-        <p>
-          Muchas veces necesitamos tener modales que se renderizan globalmente y no en el componente que lo abre
-        </p> 
-        <p>
-          Un claro ejemplo se da en NextJs: Un botón de eliminar en una card de una lista de elementos, 
-          al abrir el modal y eliminar el elemento, la server action refresca la pagina, 
-          la card deja de existir, y el modal junto con la card, eso no nos permite mostrar un mensaje de eliminado con éxito.
-        </p>        
+        <h1 className='text-4xl font-bold mb-4'>Ejemplo de modales globales en ReactJs</h1>      
       </header>
       <EmulatePagesRouter />
       <ModalsWrapper />
