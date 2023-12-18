@@ -1,10 +1,8 @@
 # Ejemplo de modales globales en ReactJs
 
 
-Muchas veces necesitamos tener modales que se renderizan globalmentey no en el componente que lo abre.
-Un claro ejemplo se da en NextJs: Un botón de eliminar en una card deuna lista de elementos, 
-al abrir el modal y eliminar el elemento, la server action refrescala pagina, 
-la card deja de existir, y el modal junto con la card, eso no nospermite mostrar un mensaje de eliminado con éxito.
+Muchas veces necesitamos tener modales que se renderizan globalmente y no dentro del componente que los abre.
+Un claro ejemplo se da en Next.js: tenemos un botón de eliminar en una tarjeta de una lista de elementos que permite abrir un modal para eliminar el elemento. Una vez eliminado, cuando la acción del servidor valida la página, esta se vuelve a renderizar y la tarjeta de ese elemento deja de existir, junto con el modal ya que estaba siendo renderizado dentro de la tarjeta. Esto nos impide mostrar un mensaje de eliminación exitosa o ejecutar otro tipo de acción posterior.
     
 
 ## Implementación
